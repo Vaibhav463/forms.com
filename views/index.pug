@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>using plain html in PUG</title> -->
+    <title>#{title}</title>
+    style
+       include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Fill this form- TO LOGIN</h1>
+        <!-- <p>
+            | #{content}
+            | This is a plain html using Pug
+        </p> -->
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME">
+            <input type="text" name="age" id="age" placeholder="ENTER YOUR AGE">
+            <input type="text" name="gender" id="gender" placeholder="ENTER YOUR GENDER">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="ENTER YOUR ADDRESS"></textarea>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
